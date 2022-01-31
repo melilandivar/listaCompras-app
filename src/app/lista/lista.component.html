@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngIf="lista!=null">
+          <tr *ngFor="let producto of lista">
+            <td>  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </td>
+            <td>{{producto.cantidad}}</td>
+            <td>{{producto.nombreProducto}}</td>
+            <td>{{producto.precio}}</td>
+        </ng-container>
+
+    </tbody>
+  </table>
